@@ -10,6 +10,9 @@ html {
 
 body {
     background-color: hsla(0, 100%, 20%, 0.473);
+    font-family: Montserrat, sans-serif;
+
+
 }
 
 .header {
@@ -63,18 +66,59 @@ body {
 
 .photos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 3rem;
-    border: 1px solid black;
 }
 
 .photos img {
-    flex: 1 1 1rem;
+    flex: 1 1 18rem;
+    max-width: 25rem;
+    padding: 0.5rem;
+}
+
+.testimonial {
+    position: absolute;
+    left: 0;
     width: 100%;
-    padding: 0 0.5rem;
+    background-color: hsl(263, 100%, 15%);
+    color: hsl(55, 100%, 43%);
+    line-height: 2rem;
+}
+
+.testimonial div {
+    width: 90%;
+    margin-left:5%;
+    padding: 2rem 0 6rem;
+}
+
+.photos.bottom {
+    margin-top: 15rem;
+}
+
+.meetup {
+    text-align: center;
+    color: hsl(55, 100%, 43%);
+}
+
+.meetup img {
+    width: 40rem;
+    height: 50rem;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+.meetup h1 {
+    padding: 1rem 0;
 }
 
 .footer {
     width: 100%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .photos img {
+        max-width: 40%;
+    }
 }
